@@ -25,6 +25,7 @@ class Board extends React.Component {
     squares[i] = this.state.xIsNext ? "X" : "O";
     this.setState({ squares: squares, xIsNext: !this.state.xIsNext });
   }
+  // Each time a player moves, xIsNext (a boolean) will be flipped to determine which player goes next and the game’s state will be saved. We’ll update the Board’s handleClick function to flip the value of xIsNext
 
   renderSquare(i) {
     return (
@@ -36,7 +37,7 @@ class Board extends React.Component {
   }
 
   render() {
-    const status = "Next player: X";
+    const status = "Next player: " + (this.state.xIsNext ? "X" : "O");
 
     return (
       <div>
