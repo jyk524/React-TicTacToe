@@ -15,13 +15,14 @@ class Board extends React.Component {
     super(props);
     this.state = {
       squares: Array(9).fill(null),
+      xIsNext: true,
     };
   }
 
   // we call .slice() to create a copy of the squares array to modify   instead of modifying the existing array
   handleClick(i) {
     const squares = this.state.squares.slice();
-    squares[i] = "X";
+    squares[i] = this.state.xIsNext ? "X" : "O";
     this.setState({ squares: squares });
   }
 
