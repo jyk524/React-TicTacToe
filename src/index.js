@@ -15,7 +15,7 @@ class Square extends React.Component {
       <button
         className="square"
         onClick={() => {
-          this.setState({ value: "X" });
+          this.props.onClick({ value: "X" });
         }}
       >
         {this.props.value}
