@@ -13,7 +13,7 @@
 7. [Questions](#questions)
 8. [Links](#links)
 
-![Alt Text](https://imgur.com/M7aI4lE)
+![Alt Text]()
 
 ### Description
 
