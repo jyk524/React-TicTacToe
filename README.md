@@ -8,10 +8,9 @@
 2. [Installation](#installation)
 3. [Usage](#usage)
 4. [License](#license)
-5. [Contribute](#contribute)
-6. [Test](#test)
-7. [Questions](#questions)
-8. [Links](#links)
+5. [Test](#test)
+6. [Questions](#questions)
+7. [Links](#links)
 
 ![Alt Text](https://github.com/jyk524/React-TicTacToe/blob/main/src/images/TicTacToe%20React.gif)
 
@@ -30,10 +29,6 @@
 ### License
 
 - MIT
-
-### Contribute
-
--
 
 ### Test
 
