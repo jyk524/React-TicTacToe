@@ -13,7 +13,7 @@
 7. [Questions](#questions)
 8. [Links](#links)
 
-![Alt Text]()
+![Alt Text](https://github.com/jyk524/React-TicTacToe/blob/main/src/images/TicTacToe%20React.gif)
 
 ### Description
 
