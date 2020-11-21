@@ -14,12 +14,14 @@ class Board extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      squares: Array(9).fill(null),
+      history: [
+        {
+          squares: Array(9).fill(null),
+        },
+      ],
       xIsNext: true,
     };
   }
-
-  // we call .slice() to create a copy of the squares array to modify   instead of modifying the existing array
   handleClick(i) {
     const squares = this.state.squares.slice();
     if (calculateWinner(squares) || squares[i]) {
@@ -28,8 +30,6 @@ class Board extends React.Component {
     squares[i] = this.state.xIsNext ? "X" : "O";
     this.setState({ squares: squares, xIsNext: !this.state.xIsNext });
   }
-  // Each time a player moves, xIsNext (a boolean) will be flipped to determine which player goes next and the game’s state will be saved. We’ll update the Board’s handleClick function to flip the value of xIsNext
-
   renderSquare(i) {
     return (
       <Square
@@ -38,7 +38,6 @@ class Board extends React.Component {
       />
     );
   }
-
   render() {
     const winner = calculateWinner(this.state.squares);
     let status;
@@ -47,7 +46,6 @@ class Board extends React.Component {
     } else {
       status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
-
     return (
       <div>
         <div className="status">{status}</div>
@@ -71,6 +69,7 @@ class Board extends React.Component {
   }
 }
 
+// Top Level - Game component
 class Game extends React.Component {
   render() {
     return (
