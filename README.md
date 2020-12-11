@@ -31,9 +31,9 @@
 
 - MIT
 
-### Contribute
+### Contributors
 
--
+- James Kim
 
 ### Test
 
