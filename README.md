@@ -40,7 +40,7 @@
 
 ### Questions
 
-- no
+- Implenting Score Chart and share link
 
 ### Links and Email
 
