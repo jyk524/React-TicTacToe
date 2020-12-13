@@ -40,7 +40,7 @@
 
 ### Questions
 
-- Implenting Score Chart and share link
+- adding Score Chart and share link
 
 ### Links and Email
 
